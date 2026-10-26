@@ -176,3 +176,99 @@ done > loci_counts.txt
 
 #### Upload data into iTOL and export tree
 Load your .tree and .txt files with loci counts and heritability to https://itol.embl.de/ and format your tree [as desired](https://itol.embl.de/help.cgi)
+
+## Companion website and supplementary data
+
+Companion website and supplementary data for:
+
+> Hughes DA, Bacigalupe R, Wang J, Rühlemann MC, Tito RY, Falony G, Joossens M, Vieira-Silva S, Henckaerts L, Rymenans L, Verspecht C, Ring S, Franke A, Wade KH, Timpson NJ, Raes J. **Genome-wide associations of human gut microbiome variation and implications for causal inference analyses**. *Nature Microbiology* 5(9):1079–1087 (2020). [doi:10.1038/s41564-020-0743-8](https://doi.org/10.1038/s41564-020-0743-8)
+
+It contains the main figures (PNG previews and PDF), the supplementary tables (xlsx), the supplementary information (PDF), and the FGFP data access procedure that is referred to in the article.
+
+**Website:** https://raeslab.github.io/fgfp-gwas/ (GitHub Pages, served from `docs/` on the `master` branch)
+
+This material was previously hosted on the Raes Lab website at `raeslab.org/companion/fgfp-gwas/` and has been migrated to this repository.
+
+### Contents
+
+| Path | Size | Description |
+|------|------|-------------|
+| `supplementary/FGFP_SI.pdf` | 3.5 MB | Supplementary Information (methods, supplementary figures and tables 6, 15 and 16). |
+| `supplementary/figures/Figure_1.pdf` | 81 KB | Figure 1 – MT-associated loci and heritability (PDF) |
+| `supplementary/figures/Figure_2.pdf` | 3.1 MB | Figure 2 (i) – Genomic variants associated with microbial traits (PDF) |
+| `supplementary/figures/Figure_2.pdf` | 3.1 MB | Figure 2 (ii) – Genomic variants associated with microbial traits (PDF) |
+| `supplementary/tables/Supplementary_Table1.xlsx` | 10 KB | Summary of analytical methods as published in previous human, 16S rRNA microbiome GWAS studies. The table includes publication details of the studies (the title, first author, website url), their sample size, 16S rRNA gene variable region amplified and sequenced, software or pipeline used to cluster 16S reads into taxonomic and/or operational taxonomic units (OUT). In addition, the number of microbial traits (MT) analyzed in the mGWAS, transformation applied to the MT abundance data, software or test applied to perform association between genotype and MT, and methodologies used to account for population structure and for multiple testing burden. |
+| `supplementary/tables/Supplementary_Table11.xlsx` | 162 KB | Results derived from PhenoScanner V2 analysis. Including all previously reported GWAS associations for the top 14 variants at a p-value threshold of 0.01 (PhenoScanner_GWAS); all previously reported expression quantitative loci associations, (PhenoScanner_eQTL) and all previously reported methylation quantitative loci associations (PhenoScanner_methQTL). |
+| `supplementary/tables/Supplementary_Table12.xlsx` | 1012 KB | Meta-analysis GENE2FUNC enrichment. All enrichment results derived from GENE2FUNC (http://fuma.ctglab.nl), containing all results “GENE2FUNC_All_Enrich_Result” and only those from the GWAS Catalog and Canonical Pathways “GENE2FUNC_GWAS_&_CanonicalPath” that we used for the study. In addition, the gene expression (GTEx v7) analysis for general tissues (“GTEx_v7_GeneralTissue_DEG”) and specific tissues (“GTEx_v7_SpecificTissue_DEG”) differential expression groups are provided. Table includes the category identifier, the gene set or specific pathways, the number of genes in the gene set, the number of genes associated to meta-supported variants present in the gene set, the p-value, the Benjamin-Hochberg correct p-value, and the HUGO or ENSEMBL ids for all of the meta-supported genes in said gene set. |
+| `supplementary/tables/Supplementary_Table13.xlsx` | 87 KB | Bi-directional Mendelian randomization results. Mendelian randomization (MR) results for MT of disease phenotypes and disease of MTs are provided. For MT of disease only a single SNP was used as the instrument, so Wald Ratio results are presented for those MT in Table 1 and for Bifidobacterium AB separately. Tables include the exposure (MT) outcome (disease) the number of SNPs used as instruments, the model, and parameter estimates beta (presented as log odd ratios for binary outcomes and standard deviation units of change for continuous), standard error and p-value. Disease-on-MT MR analysis include results for inverse variance weighted, weighted median, weighted mode, and MR Egger methods, as well as additional results tables for Heterogeneity and Pleiotropy sensitivity analysis. |
+| `supplementary/tables/Supplementary_Table14.xlsx` | 33 KB | SNP rids for all genetic variants used to proxy disease phenotypes in MR analyses. |
+| `supplementary/tables/Supplementary_Table17.xlsx` | 24 KB | FGFP cohort summary statistics for analyzed taxa. Table includes taxon name (taxa), mean abundance (mean), standard deviation, Shapiro’s W-statistic for the raw, log2, and rank normal data transformed distributions, and accompanying p-values for the Shapiro normality test. In addition, the proportion of individuals with zero counts (equivalent to 1-prevelance) and a flag (0 = no, 1 = yes) declaring if a taxon should be processed through the 2-step hurdle binary (HB) model, including a P/A and zero-truncated abundance trait. Finally, for HB taxon there is also an estimate of the zero-truncated mean abundance and its standard deviation. |
+| `supplementary/tables/Supplementary_Table18.xlsx` | 244 KB | Cohort microbiome summary statistics. The taxa in FGFP, FOCUS and PopGen are included, with information on their mean abundances, standard deviation, Shapiro’s W-statistic for the raw, log2, and rank normal data transformed distributions, and accompanying p-values for the Shapiro normality test. In addition, the proportion of individuals with zero counts (equivalent to 1-prevelance) and a flag (0 = no, 1 = yes) declaring if a taxon should be processed through the 2-step hurdle binary (HB) model, including a P/A and zero-truncated abundance trait. Finally, for HB taxon there is also an estimate of the zero-truncated mean abundance and its standard deviation. |
+| `supplementary/tables/Supplementary_Table19.xlsx` | 44 KB | DEPICT gene enrichment results for individuals MTs. This table includes GO, KEGG, Reactome, and Ensembl gene subnetworks. The gene set ID and functional category source along with description of the functional category gene set are included. |
+| `supplementary/tables/Supplementary_Table2.xlsx` | 7.8 MB | Microbial trait data used in this study. The table includes individual level DADA2 integer count data for all phylogenetic levels (highlighted in green); the (zero-truncated)-abundance data rank normal transformed and regressed (RNTRes) against technical batch covariates, PC1-10, sex, and age (residuals extracted) (in blue); the derived presence (1) or absence(0) (P/A) hurdle binary (HB) data for zero-inflated counts (yellow); and the diversity metrics, untransformed or regressed and enterotype calls. |
+| `supplementary/tables/Supplementary_Table20.xlsx` | 74 KB | Tissue enrichment results for individuals MTs. Tissue specific DEPICT enrichment, MeSH refers to Medical Subject Headings. |
+| `supplementary/tables/Supplementary_Table21.xlsx` | 11 KB | DEPICT gene priority enrichment results for individuals MTs. All variants with a p-value less than 1x10-5 in the initial FGFP GWAS screen are included. |
+| `supplementary/tables/Supplementary_Table22.xlsx` | 322 KB | Garfield enrichment results for MTs. Tissue specific epigenetic regulatory function enrichment analysis derived from GARFIELD using FGFP variants at an association smaller than p-value of 1x10-5. The table includes MT identifier, odds ratio, p-value, Benjamini-Hochberg correct p-value, along with the specific regulatory annotation, cell type, tissue and epigenetic category of the association. |
+| `supplementary/tables/Supplementary_Table3.xlsx` | 49 KB | GWAS taxa (92) result summaries. The table contains the 92 taxon used in the mGWAS with their corresponding phylogenetic description (phylum, class, order, family, genus), prevalence and abundance in FGFP, the number of sites and loci associated with each taxon derived from the meta-analysis, and from FGFP alone. In addition, the heritability point estimates, standard errors, and p-values for presence/absence (P/A), rank normal transformed abundances (AB), as well as log and box-cox transformations of the integer count data for cross study comparison. |
+| `supplementary/tables/Supplementary_Table5.xlsx` | 1.9 MB | Results and annotation for all 3,321 meta-supported associations. Meta-supported associations refer to those with smaller p-value in the meta-analysis compared to FGFP alone. The table includes the microbial traits, rsids, snpids, a flag (TagLocus) indicating if a variant is a locus tag or top result in a linkage disequilibrium block, parameter estimates for the meta-analysis, FGFP, FoCUS and PopGen including, beta, se, association p-value, sample size, variant info score, minor allele frequency, effect allele frequency, and annotation of variants with DEPICT, and ENSEMBL v75 via biomaRt. |
+| `supplementary/tables/Supplementary_Table7.xlsx` | 153 KB | Catalog of MT-SNP matched hits previously reported in mGWAS associations. The table provides the estimates for the like or a higher order taxonomic level microbial trait, when available, from the FGFP (-method score) alongside the publicly available data from previous studies. |
+| `supplementary/tables/Supplementary_Table8.xlsx` | 133 KB | Catalog of top hits previously reported in mGWAS associations. Estimates for the STONGEST associated (smallest p-value, REGARDLESS OF THE TRAIT) microbial trait, when available, from the FGFP (-method score) is provided alongside the publicly available data from previous studies. |
+| `supplementary/tables/Supplementary_Table9.xlsx` | 23 KB | The effect estimates for all FGFP microbial traits at the MCM6 rs4988235 variant. The table includes MT as defined by FGFP, the rsid in FGFP, the SNPID in FGFP, defined as a compound identifier of chromosome:basepair_allele1_allele2, chromosome as reported by FGFP, base position as reported by FGFP (hg19), reference allele in FGFP, effect allele in FGFP, minor allele frequency in FGFP, imputation information score in FGFP, beta or effect estimate for the MT, standard error in FGFP, p-value in FGFP. |
+
+Total supplementary data: 21.9 MB.
+
+#### Data access
+
+Summary statistics (≈110 GB) are available at <https://doi.org/10.5523/bris.22bqn399f9i432q56gt3wfhzlc>.
+
+The process of enquiry for data access is as follows: upon data request by email to jeroen.raes@kuleuven.be, the
+FGFP data access committee will evaluate access permission, which will be granted upon signature of a data use
+agreement between the governing legal entities.
+
+#### Notes
+
+* Supplementary Tables 6, 15 and 16 are part of the Supplementary Information PDF.
+* Supplementary Tables 4 and 10 were listed on the original website but the files were not present in the archived site.
+
+### Repository layout
+
+```
+docs/                 Static, self-contained website (GitHub Pages source; no external CSS/JS/fonts)
+  index.html
+  assets/             Stylesheet, script, logo, figure previews
+supplementary/        Downloadable data files
+```
+
+#### Data files
+
+The files in `supplementary/` are stored as normal git files (≈ 22 MB, largest 8 MB). Git LFS is not used because
+GitHub does not accept LFS uploads to public forks, and this repository is a fork of `kul-fgfpgwas/rep-cookbook`.
+The website's download buttons point to `https://github.com/raeslab/fgfp-gwas/raw/master/supplementary/...`;
+when `docs/index.html` is opened from a local checkout the links switch to the relative `../supplementary/` paths.
+
+#### Publishing
+
+In the repository settings, enable GitHub Pages with source *Deploy from a branch* → `master` / `/docs`.
+
+### How to cite
+
+If you use these data, please cite:
+
+> Hughes DA, Bacigalupe R, Wang J, Rühlemann MC, Tito RY, Falony G, Joossens M, Vieira-Silva S, Henckaerts L, Rymenans L, Verspecht C, Ring S, Franke A, Wade KH, Timpson NJ, Raes J. **Genome-wide associations of human gut microbiome variation and implications for causal inference analyses**. *Nature Microbiology* 5(9):1079–1087 (2020). [doi:10.1038/s41564-020-0743-8](https://doi.org/10.1038/s41564-020-0743-8)
+
+```bibtex
+@article{hughes2020genome,
+  title   = {{Genome-wide associations of human gut microbiome variation and implications for causal inference analyses}},
+  author  = {Hughes, D. A. and Bacigalupe, R. and Wang, J. and Rühlemann, M. C. and Tito, R. Y. and Falony, G. and Joossens, M. and Vieira-Silva, S. and Henckaerts, L. and Rymenans, L. and Verspecht, C. and Ring, S. and Franke, A. and Wade, K. H. and Timpson, N. J. and Raes, J.},
+  journal = {Nature Microbiology},
+  year    = {2020},
+  volume  = {5},
+  number  = {9},
+  pages   = {1079--1087},
+  doi     = {10.1038/s41564-020-0743-8}
+}
+```
+
+### Contact
+
+Raes Lab, VIB–KU Leuven Center for Microbiology – Prof. Jeroen Raes (jeroen.raes@kuleuven.be).
